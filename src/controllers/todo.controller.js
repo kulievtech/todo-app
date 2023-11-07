@@ -14,7 +14,7 @@ class TodoController {
 
         if (!input.title || !input.description || !input.dueDate) {
             throw new CustomError(
-                "Name, Description and Due Date are required",
+                "Title, Description and Due Date are required",
                 400
             );
         }
