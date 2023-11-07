@@ -11,7 +11,8 @@ class TodoService {
                 title: true,
                 description: true,
                 dueDate: true,
-                status: true
+                status: true,
+                id: true
             }
         });
 
