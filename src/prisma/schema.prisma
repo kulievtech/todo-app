@@ -24,7 +24,7 @@ model Todo {
     id          String     @id @default(auto()) @map("_id") @db.ObjectId
     title       String
     description String
-    dueDate     String
+    dueDate     DateTime
     status      TodoStatus @default(TODO)
     userId      String     @db.ObjectId
     createdAt   DateTime   @default(now())
