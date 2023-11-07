@@ -6,6 +6,12 @@ class TodoService {
             data: {
                 ...input,
                 userId: userId
+            },
+            select: {
+                title: true,
+                description: true,
+                dueDate: true,
+                status: true
             }
         });
 
