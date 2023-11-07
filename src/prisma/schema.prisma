@@ -35,4 +35,5 @@ enum TodoStatus {
     TODO
     INPROGRESS
     DONE
+    ARCHIVED
 }
