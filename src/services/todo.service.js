@@ -62,19 +62,6 @@ class TodoService {
 
         return todos;
     };
-
-    changeStatus = async (id, userId, status) => {
-        await prisma.todo.update({
-            where: {
-                id: id,
-                userId: userId
-            },
-
-            data: {
-                status: status
-            }
-        });
-    };
 }
 
 export const todoService = new TodoService();

@@ -66,20 +66,6 @@ class TodoController {
             data: todos
         });
     });
-
-    archive = catchAsync(async (req, res) => {
-        const { params, userId } = req;
-
-        await todoService.changeStatus(params.id, userId, "ARCHIVED");
-        res.status(204).send();
-    });
-
-    reactivate = catchAsync(async (req, res) => {
-        const { params, userId } = req;
-
-        await todoService.changeStatus(params.id, userId, "TODO");
-        res.status(204).send();
-    });
 }
 
 export const todoController = new TodoController();
